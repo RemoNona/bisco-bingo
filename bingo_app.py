@@ -161,7 +161,7 @@ def main():
             score = b.rank.sort_values(by=['count'], ascending=False)
             score = score[score['count'] != 0]
             
-            x.dataframe(b.rank.head(3))
+            x.dataframe(score.head(5))
 
     if len(b.winners) > 0:
         st.title('BINGO! The winner(s):')

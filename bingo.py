@@ -13,7 +13,7 @@ class Bingo():
                 ['anthem', 'spraypaint', 'jigsaw earth', 'kitchen mitts', 'the overture'],
                 ['therapy', 'mindless dribble', 'times square', 'abraxas', '7-11'],
                 ['crystal ball', 'litte lai', 'little betty boop', 'triumph', "mulberry's dream"],
-                ['running into the night', 'shem-rah boo', 'voices isongane', 'naeba', '42']
+                ['running into the night', 'shem-rah boo', 'voices insane', 'naeba', '42']
             ]),
             'player2':pd.DataFrame([
                 ['shocked!', 'hot air balloon', 'spaga', "mulberry's dream", 'why we dance'],

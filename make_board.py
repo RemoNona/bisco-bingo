@@ -29,6 +29,7 @@ df = pd.DataFrame(board)
 e.dataframe(df)
 
 submit = st.checkbox('sumbit')
+
 if submit:
     for i in board:
         print(i)

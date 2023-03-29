@@ -152,7 +152,7 @@ def main():
     x = st.empty()
     
     for i in range(200):
-        song = st.sidebar.selectbox(f'Song {count}:', b.songs, key=str(count))
+        song = st.sidebar.selectbox(f'Song {count+1}:', b.songs, key=str(count))
         count += 1 
         if song:
             b.update_boards(song)

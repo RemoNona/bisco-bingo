@@ -38,14 +38,14 @@ class Bingo():
                 ['sound one', 'morph dusseldorf', 'another plan of attack', 'lunar pursuit', 'chemical warfare brigade'],
                 ['shem-rah boo', 'the very moon', 'helicopters', 'naeba', 'spraypaint']
             ]),
-            'Evan':pd.DataFrame([
+            'Tomer':pd.DataFrame([
                 ['evolve', 'mr. don', "humuhumunukunukuapua'a", 'little lai', "who's in charge?"],
                 ['mindless dribble', 'aceetobee', 'jigsaw earth', 'spaga', 'crickets'],
                 ["mulberry's dream", 'another plan of attack', 'helicopters', '42', 'run like hell'],
                 ['the overture', '7-11', 'confrontation', 'house dog party favor', 'space train'],
                 ['tourists (rocket ship)', 'once the fiddler paid', 'little betty boop', 'hope', 'twisted in the road']
             ]),
-            'Tomer':pd.DataFrame([
+            'Evan':pd.DataFrame([
                 ['another plan of attack', 'rocket science', 'freeze', 'anthem', 'plan b'],
                 ['m1', 'feeling twisted', 'morph dusseldorf', 'tourists (rocket ship)', 'uber glue'],
                 ['vassillios', '42', 'strobelights and martinis', 'spaga', 'magellan'],
@@ -178,9 +178,9 @@ class Bingo():
 def main():
     b = Bingo()
     b.board_songs()
-    count = 0
     x = st.empty()
 
+    count = 0
     for i in range(200):
         song = st.sidebar.selectbox(f'Song {count+1}:', b.songs, key=str(count))
         count += 1 

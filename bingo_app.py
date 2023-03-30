@@ -107,7 +107,7 @@ class Bingo():
                 board_songs += row
 
         board_songs = [' '] + list(set(board_songs))
-        board_songs.sorted()
+        board_songs.sort()
         self.songs = board_songs
             
     def next_song(self):

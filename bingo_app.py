@@ -95,10 +95,20 @@ class Bingo():
             #     ['', '', '', '', ''],
             # ]),  
         }
+        # self.songs = [i for i in self.boards.values()]
         self.winners = []
         # ['Rank', 'Player', 'Row/Col/Diag']
         self.rank = pd.DataFrame(columns=None)
-        
+
+    def board_songs(self):
+        board_songs = []
+        for board in self.boards.values():
+            for row in board.values.tolist():
+                board_songs += row
+
+        board_songs = [' '] + list(set(board_songs))
+        self.songs = board_songs
+            
     def next_song(self):
         song = random.choice(self.songs)
         self.songs.remove(song)
@@ -166,6 +176,7 @@ class Bingo():
 
 def main():
     b = Bingo()
+    b.board_songs()
     count = 0
     x = st.empty()
 

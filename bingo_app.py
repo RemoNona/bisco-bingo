@@ -107,7 +107,8 @@ class Bingo():
                 board_songs += row
 
         board_songs = [' '] + list(set(board_songs))
-        self.songs = board_songs.sorted()
+        board_songs.sorted()
+        self.songs = board_songs
             
     def next_song(self):
         song = random.choice(self.songs)
